@@ -1,0 +1,126 @@
+{
+    "____comment": "This file was generated with eosio-abigen. DO NOT EDIT ",
+    "version": "eosio::abi/1.1",
+    "types": [],
+    "structs": [
+        {
+            "name": "createtoken",
+            "base": "",
+            "fields": [
+                {
+                    "name": "sym",
+                    "type": "symbol"
+                }
+            ]
+        },
+        {
+            "name": "rate",
+            "base": "",
+            "fields": [
+                {
+                    "name": "ratee",
+                    "type": "uint64"
+                },
+                {
+                    "name": "rater",
+                    "type": "uint64"
+                },
+                {
+                    "name": "rating",
+                    "type": "asset"
+                },
+                {
+                    "name": "reviewId",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "ratee",
+            "base": "",
+            "fields": [
+                {
+                    "name": "sumRep",
+                    "type": "asset"
+                },
+                {
+                    "name": "numOfReviewer",
+                    "type": "int32"
+                },
+                {
+                    "name": "avgRep",
+                    "type": "asset"
+                }
+            ]
+        },
+        {
+            "name": "rater",
+            "base": "",
+            "fields": [
+                {
+                    "name": "sumRep",
+                    "type": "asset"
+                },
+                {
+                    "name": "numOfReview",
+                    "type": "int32"
+                },
+                {
+                    "name": "avgRep",
+                    "type": "asset"
+                },
+                {
+                    "name": "relWeight",
+                    "type": "float64"
+                }
+            ]
+        },
+        {
+            "name": "token",
+            "base": "",
+            "fields": [
+                {
+                    "name": "tokenSym",
+                    "type": "symbol"
+                }
+            ]
+        }
+    ],
+    "actions": [
+        {
+            "name": "createtoken",
+            "type": "createtoken",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "rate",
+            "type": "rate",
+            "ricardian_contract": ""
+        }
+    ],
+    "tables": [
+        {
+            "name": "ratees",
+            "type": "ratee",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "raters",
+            "type": "rater",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "tokens",
+            "type": "token",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        }
+    ],
+    "ricardian_clauses": [],
+    "variants": []
+}
